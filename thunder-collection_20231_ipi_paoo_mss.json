@@ -1,0 +1,111 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "20231_ipi_paoo_mss",
+    "dateExported": "2023-05-10T19:13:42.438Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "3d7b9378-2a76-4169-a353-574ef5a11102",
+            "name": "lembretes",
+            "containerId": "",
+            "created": "2023-03-29T20:18:41.669Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "cf861090-9e6f-4675-ab25-bfcbf4ece76c",
+            "name": "observacoes",
+            "containerId": "",
+            "created": "2023-03-29T20:18:54.005Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "bfd75e4a-3e8a-40da-9f59-7e83357370f9",
+            "name": "consulta",
+            "containerId": "",
+            "created": "2023-04-26T20:03:09.797Z",
+            "sortNum": 40000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "46dc4888-e5b9-46c0-a710-f54d7af94561",
+            "colId": "efb7920c-4b84-4632-ba02-5c75f89b25b0",
+            "containerId": "3d7b9378-2a76-4169-a353-574ef5a11102",
+            "name": "obter lembretes",
+            "url": "{{MSS_HOST}}:{{MSS_LEMBRETES_PORTA}}/lembretes",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-03-29T20:20:06.694Z",
+            "modified": "2023-05-10T19:13:30.184Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b20a0bb8-6785-4c24-b9ad-328260b98d60",
+            "colId": "efb7920c-4b84-4632-ba02-5c75f89b25b0",
+            "containerId": "3d7b9378-2a76-4169-a353-574ef5a11102",
+            "name": "salvar lembrete",
+            "url": "{{MSS_HOST}}:{{MSS_LEMBRETES_PORTA}}/lembretes",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-03-29T20:20:14.962Z",
+            "modified": "2023-04-19T20:49:23.565Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"texto\": \"{{#string}}\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "748657d9-33e1-4bc1-b3f6-e0f16efae3b3",
+            "colId": "efb7920c-4b84-4632-ba02-5c75f89b25b0",
+            "containerId": "cf861090-9e6f-4675-ab25-bfcbf4ece76c",
+            "name": "obter observacoes",
+            "url": "{{MSS_HOST}}:{{MSS_OBSERVACOES_PORTA}}/lembretes/1/observacoes",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-04-05T19:24:10.455Z",
+            "modified": "2023-04-26T20:19:54.533Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3f71249c-d81d-427e-9337-cbe4c724fc79",
+            "colId": "efb7920c-4b84-4632-ba02-5c75f89b25b0",
+            "containerId": "cf861090-9e6f-4675-ab25-bfcbf4ece76c",
+            "name": "salvar observacao",
+            "url": "{{MSS_HOST}}:{{MSS_OBSERVACOES_PORTA}}/lembretes/1/observacoes",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-04-05T20:25:02.938Z",
+            "modified": "2023-05-10T19:12:30.231Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"texto\": \"{{#string}}\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "415b3b35-c435-4460-9512-17cae115ce34",
+            "colId": "efb7920c-4b84-4632-ba02-5c75f89b25b0",
+            "containerId": "bfd75e4a-3e8a-40da-9f59-7e83357370f9",
+            "name": "consultar base",
+            "url": "{{MSS_HOST}}:{{MSS_CONSULTA_PORTA}}/lembretes",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-04-26T20:20:32.737Z",
+            "modified": "2023-04-26T20:22:53.950Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
